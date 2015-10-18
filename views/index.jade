@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div(id="canvas-holder")
+    canvas(id="chart-area" width="400" height="400")
+  div(id="goodbutton")  
+    button(class="pointbutton" onclick="behaviorClick(1)")
+      img(src="/images/good.png")
+  div(id="badbutton")
+    button(class="pointbutton" onclick="behaviorClick(0)")
+      img(src="/images/bad.png")
+  script(src="/javascripts/behaviormain.js")
